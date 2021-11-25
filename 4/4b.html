@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>WP,4b!</title>
+  </head>
+
+  <body>
+    <h1>Static Template!</h1>
+
+    <label for="">Please enter a string :: </label>
+    <input type="text" id="str"></input>
+    <br>
+    <button margin="5px 5px" onclick="leftMostVowel(document.getElementById('str').value)">Click for Position of the Left Most Vowel</button>
+
+    <br><br><br>
+
+    <label for="">Please enter a number :: </label>
+    <input type="text" id="num"></input>
+    <br>
+    <button onclick="reverseNum(document.getElementById('num').value)">Click to Reverse the Number</button>
+
+    <br>
+    <h1 id='soln'></h1>
+
+  </body>
+
+  <script>
+    
+    function leftMostVowel(str)
+    {
+      str = str.toLowerCase();
+      for(var i = 0; i < str.length; i++) 
+      {
+      var chr = str.charAt(i);
+      if(chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u')break;
+      }
+      if(i<str.length )
+        document.getElementById("soln").innerHTML = "Position of left-most vowel :: " +(i+1);
+      else
+        document.getElementById("soln").innerHTML = "No vowel found in the entered string :( ";
+      return
+    }
+
+    function reverseNum(num)
+    {
+      var number= num.split("")
+      number = number.reverse() 
+      reverse = Number(number.join(""))
+      document.getElementById("soln").innerHTML = "Reverse of the entered number :: " +reverse;
+    }
+  </script>
+</html>
