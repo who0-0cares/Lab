@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Web Programming, Question 2 -- Aug 18, 2021</title>
+<style>
+
+body {
+    background-image:url("https://i.quotev.com/z4ilq4x4t3ba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+} 
+
+.left {
+    padding-left:10px;
+    color: blue;
+    font-family:Frankin Gothic Medium;
+    font-style:italic;
+}
+
+.centre {
+    text-align:center;
+    color: black;
+    text-transform:uppercase;
+    letter-spacing:-2;
+    word-spacing:10;
+    text-decoration: underline;
+}
+
+.right {
+    text-align:right;
+    letter-spacing:-1;
+    text-transform:uppercase;
+    color: red;
+    font-family:Arial Narrow;
+    font-style:italic;
+    word-spacing:7;
+}
+
+.bold{
+    font-size:30px;
+    color: orange;
+    text-decoration:underline;
+}
+
+.larger{
+    font-size: 25px;
+}
+
+.links{
+    color: green;
+    font-weight: 900;
+}
+
+a{
+    color:orange;
+}
+                
+a:active {
+    color:green;
+}
+
+a:visited {
+    color:pink;
+}
+
+a:hover {
+    color:black;
+    text-decoration: underline;                   
+}
+
+#plus{
+    cursor: crosshair;
+}
+ #pointing{
+     cursor: pointer;
+ }
+
+ #grasping{
+     cursor: grab;
+ }
+
+ #Ibar{
+    cursor: text;
+ }
+
+ #wait{
+    cursor: wait;
+ }
+
+ #question{
+     cursor: help;
+ }
+
+</style>
+</head>
+<body>
+    <h1>CSS (Inline, Internal and External)</h1>
+    This Paragraph is a Not Styled
+    <p class="left">This Paragrah is Styled by class "Left"</p>
+    <p class="centre">This Paragrah is Styled by class "Centre"</p>
+    <p class="right">_____________________________________________________<br><span class="larger">T</span>his <span class="larger">P</span>aragraph is <span class="larger">S</span>tyled by class <span class="larger">"R</span>ight<span class="larger">"</span></p>
+    <p><strong>This is normal bold</strong><br>
+    <strong class="bold">This Bold Text is Styled</strong></p>
+    <a href="https://images.app.goo.gl/QZqxBZvC9rvTsv5x6" style="text-decoration:none"> This is a link</a>
+    <div class="links">
+    <p id="plus">The cursor over this element is a plus sign</p>
+    <p id="pointing">The cursor over this element is a pointing hand</p>
+    <p id="grasping">The cursor over this element is a grasping hand</p>
+    <p id="Ibar">The cursor over this element is an I bar</p>
+    <p id="wait">The cursor over this elemtn is a wait</p>
+    <p id="question">The cursor over this element is a question mark</p>
+    </div>
+</body>
+</html>
