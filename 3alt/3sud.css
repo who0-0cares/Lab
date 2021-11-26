@@ -1,0 +1,35 @@
+input[type=button] {
+    width: 70px;
+    height: 50px;
+    background-color: #205b7a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type=text] {
+    height: 40px;
+    width: 95%;
+    font-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table-container {
+    display: flex;
+    justify-content:center;
+}
+table {
+    border: 2px solid #000000;
+    background-color:  #142f44;
+    border-radius: 5px;
+    padding: 4px;
+}
+input[type=button]:hover {
+    background-color: #ffa270;
+    color: rgb(246, 253, 246);
+    font-size: 200%;
+}
+h2{
+    display: flex;
+    justify-content:center;
+
+}
+
