@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /*font-weight: normal;*/
+  }
+  
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: rgb(229, 231, 231);
+  }
+  
+  #center{
+    text-align: center;
+  }
+
+  .box{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: minmax(180px, auto) repeat(5, 100px);
+  }
+  
+  .box>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .box>button:hover{
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .twospan{
+    grid-column: span 2;
+  }
+  
+  .output{
+    grid-column: 1 / -1;
+    background-color: rgb(188, 214, 221);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previousOperand {
+    color: linen;
+    font-size: 2rem;
+  }
+  
+  .output .currentOperand {
+    color: white;
+    font-size: 3rem;
+  }
